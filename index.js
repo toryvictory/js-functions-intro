@@ -40,3 +40,20 @@ console.log('checkMultiplicity(25, 5) = ' + checkMultiplicity(25, 5));
 console.log('checkMultiplicity(15, 3) = ' + checkMultiplicity(15, 3));
 console.log('checkMultiplicity(15, 5) = ' + checkMultiplicity(15, 5));
 console.log('checkMultiplicity(15, 4) = ' + checkMultiplicity(15, 4));
+
+/* 3. Проверка возможности треугольника. Создать функцию которая принимает длины треугольника; функция возвращает true если треугольник возможен и false если нет
+ */
+
+/**
+ * Checks wheather it is possible to create a triangle with sides of the given lengths.
+ * @param lengthSideA
+ * @param lengthSideB
+ * @param lengthSideC
+ * @returns {boolean}
+ */
+function isTriangle(lengthSideA, lengthSideB, lengthSideC) {
+    return lengthSideA + lengthSideB > lengthSideC && lengthSideB + lengthSideC > lengthSideA && lengthSideA + lengthSideC > lengthSideB;
+}
+
+console.log('isTriangle(15, 4, 9) = ' + isTriangle(15, 4, 9));
+console.log('isTriangle(26, 28, 30) = ' + isTriangle(26, 28, 30));
