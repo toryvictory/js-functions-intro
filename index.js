@@ -57,3 +57,48 @@ function isTriangle(lengthSideA, lengthSideB, lengthSideC) {
 
 console.log('isTriangle(15, 4, 9) = ' + isTriangle(15, 4, 9));
 console.log('isTriangle(26, 28, 30) = ' + isTriangle(26, 28, 30));
+
+/* 4. Написать функции расчета площадей (поверхности) следующих фигур/тел: ромб, цилиндр, треугольника, прямоугольника
+ */
+
+/**
+ * Calculates the area of a rhombus with its 2 diagonals given.
+ * @param diagonalA Diagonal A of a rhombus
+ * @param diagonalB Diagonal B of a rhombus
+ * @returns {number} Area of a rhombus
+ */
+function rhombusArea(lengthDiagonalA, lengthDiagonalB) {
+    return (lengthDiagonalA * lengthDiagonalB) / 2;
+}
+
+/**
+ * Calculates the full cylinder surface area with given radius of the base of the cylinder and height of the cylinder.
+ * @param cylinderBaseRadius The radius of the base of the cylinder
+ * @param cylinderHeight The height of the cylinder
+ * @returns {number} Full cylinder surface area
+ */
+function cylinderSurfaceArea(cylinderBaseRadius, cylinderHeight) {
+    return 2 * Math.PI * cylinderBaseRadius * (cylinderHeight + cylinderBaseRadius);
+}
+
+/**
+ * Calculates the area of a triangle given the length of the base of the triangle and the height of the triangle.
+ * @param lengthTriangleBase Length of the base of the triangle
+ * @param triangleHeight Height of the triangle
+ * @returns {number} Area of the triangle
+ */
+function triangleArea(lengthTriangleBase, triangleHeight) {
+    return (lengthTriangleBase * triangleHeight) / 2;
+}
+
+/**
+ * Calculates the area of a rectangle given the lengths of its sizes.
+ * @param lengthSideA Length of the side A of the rectangle
+ * @param lengthSideB Length of the side B of the rectangle
+ * @returns {number} Area of the rectangle
+ */
+function rectangleArea(lengthSideA, lengthSideB) {
+    return lengthSidea * lengthSideB;
+}
+
+
